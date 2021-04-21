@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namangaliklar 24</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalise.css">
 </head>
 <body>
     <!-- header start -->
@@ -52,90 +53,94 @@
      </header>   
      <!-- header end -->
 
-     <div class="content">
-        <div class="covid-info">
-            <div class="info-item"><img src="/images/covid.png" alt="covid-info-image" class="info-image" width="43" height="45">
-                <p class="info-text covid-uz">Коронавирус COVID-19 <br>в Узбекистане</p>
-            </div>
-            <div class="info-item"><img src="/images/face-with-medical-mask.png" alt="face-with-medical-mask-image" class="info-image" width="38" height="40">
-                <p class="info-text covid-sicks">Инфицированы<br><span class="info-number">2753</span></p>
-            </div>
-            <div class="info-item"><img src="/images/smile.png" alt="covid-info-image" class="info-image" width="38" height="40">
-            <p class="info-text covid-healths">Выздоровели<br><span class="info-number">2245</span></p>
-            </div>
-            <div class="info-item"><img src="/images/x.png" alt="covid-info-image" class="info-image" width="38" height="39">
-                <p class="info-text covid-deaths">Умерли<br><span class="info-number">12</span></p>
+     <!-- MAIN START -->
+     <main>
+        <h1 class="visually-hidden">Main title</h1>
+        <div class="content">
+            <div class="covid-info">
+                <div class="info-item"><img src="/images/covid.png" alt="covid-info-image" class="info-image" width="43" height="45">
+                    <p class="info-text covid-uz">Коронавирус COVID-19 <br>в Узбекистане</p>
+                </div>
+                <div class="info-item"><img src="/images/face-with-medical-mask.png" alt="face-with-medical-mask-image" class="info-image" width="38" height="40">
+                    <p class="info-text covid-sicks">Инфицированы<br><span class="info-number">2753</span></p>
+                </div>
+                <div class="info-item"><img src="/images/smile.png" alt="covid-info-image" class="info-image" width="38" height="40">
+                <p class="info-text covid-healths">Выздоровели<br><span class="info-number">2245</span></p>
+                </div>
+                <div class="info-item"><img src="/images/x.png" alt="covid-info-image" class="info-image" width="38" height="39">
+                    <p class="info-text covid-deaths">Умерли<br><span class="info-number">12</span></p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- NEWS GRID START -->
-    <section class="news-grid">
-        <div class="container">
-            <ul class="news-grid-list">
-                <li class="news-grid-item">
-                    <img src="/images/prezident@2x.jpg" alt="prezident-image" class="grid-item-img" width="386" height="190">
-                    <a href="#" class="grid-item-link">
-                        <h3 class="news-grid-header">Мирзиёев рассказал, зачем было построено<br>Сардобинское водохранилище</h3>
-                    </a>
-                    <p class="news_grid_date">05:28 / 16.05.2020</p>
-                </li>
-                <li class="news-grid-item center-grid">
-                    <img src="/images/karantin.jpg" alt="quarantine-image" class="grid-item-img" width="386" height="190">
-                    <a href="#" class="grid-item-link">
-                        <h3 class="news-grid-header">Карантин в Узбекистане продлен до 1 июня</h3> 
-                    </a>
-                    <p class="news_grid_date">05:28 / 16.05.2020</p>
-                </li>
-                <li class="news-grid-item">
-                    <img src="/images/sardoba.jpg" alt="sardoba-image" class="grid-item-img" width="386" height="190">
-                    <a href="#" class="grid-item-link">
-                        <h3 class="news-grid-header">Обмелевшая Сардоба: стихия или<br>человеческий фактор?</h3>
-                    </a>
-                    <p class="news_grid_date">05:28 / 16.05.2020</p>
-                </li>
-                <li class="news-grid-item">
-                    <img src="/images/prokuror.jpg" alt="procuror-image" class="grid-item-img" width="386" height="190">
-                    <a href="#" class="grid-item-link">
-                        <h3 class="news-grid-header">Следствие проверяет четыре версии<br>прорыва Сардобинской плотины</h3>
-                    </a>
-                    <p class="news_grid_date">05:28 / 16.05.2020</p>
-                </li>
-                <li class="news-grid-item center-grid">
-                    <img src="/images/tez-yordam.jpg" alt="ambulance-image" class="grid-item-img" width="386" height="190">
-                    <a href="#" class="grid-item-link">
-                        <h3 class="news-grid-header">Выявлено еще 7 случаев коронавируса</h3>
-                    </a>
-                    <p class="news_grid_date">05:28 / 16.05.2020</p>
-                </li>
-                <li class="news-grid-item">
-                    <img src="/images/stop-karantin.jpg" alt="not allowed-quarantine-image" class="grid-item-img" width="386" height="190">
-                    <a href="#" class="grid-item-link">
-                        <h3 class="news-grid-header">Итоги второго месяца карантина</h3>
-                    </a>
-                    <p class="news_grid_date">05:28 / 16.05.2020</p>
-                </li>
-            </ul>
-        </div>
-    </section>  
-    <!-- NEWS GRID END -->  
+        <!-- NEWS GRID START -->
+        <section class="news-grid">
+            <h2 class="visually-hidden">News grid section title</h2>
+            <div class="container">
+                <ul class="news-grid-list">
+                    <li class="news-grid-item">
+                        <img src="/images/prezident@2x.jpg" alt="prezident-image" class="grid-item-img" width="386" height="190">
+                        <a href="#" class="grid-item-link">
+                            <h3 class="news-grid-header">Мирзиёев рассказал, зачем было построено<br>Сардобинское водохранилище</h3>
+                        </a>
+                        <time class="news_grid_date" datetime="2020-05-16T05:28">05:28 / 16.05.2020</time>
+                    </li>
+                    <li class="news-grid-item center-grid">
+                        <img src="/images/karantin.jpg" alt="quarantine-image" class="grid-item-img" width="386" height="190">
+                        <a href="#" class="grid-item-link">
+                            <h3 class="news-grid-header">Карантин в Узбекистане продлен до 1 июня</h3> 
+                        </a>
+                        <time class="news_grid_date" datetime="2020-05-16T05:28">05:28 / 16.05.2020</time>
+                    </li>
+                    <li class="news-grid-item">
+                        <img src="/images/sardoba.jpg" alt="sardoba-image" class="grid-item-img" width="386" height="190">
+                        <a href="#" class="grid-item-link">
+                            <h3 class="news-grid-header">Обмелевшая Сардоба: стихия или<br>человеческий фактор?</h3>
+                        </a>
+                        <time class="news_grid_date" datetime="2020-05-16T05:28">05:28 / 16.05.2020</time>
+                    </li>
+                    <li class="news-grid-item">
+                        <img src="/images/prokuror.jpg" alt="procuror-image" class="grid-item-img" width="386" height="190">
+                        <a href="#" class="grid-item-link">
+                            <h3 class="news-grid-header">Следствие проверяет четыре версии<br>прорыва Сардобинской плотины</h3>
+                        </a>
+                        <time class="news_grid_date" datetime="2020-05-16T05:28">05:28 / 16.05.2020</time>
+                    </li>
+                    <li class="news-grid-item center-grid">
+                        <img src="/images/tez-yordam.jpg" alt="ambulance-image" class="grid-item-img" width="386" height="190">
+                        <a href="#" class="grid-item-link">
+                            <h3 class="news-grid-header">Выявлено еще 7 случаев коронавируса</h3>
+                        </a>
+                        <time class="news_grid_date" datetime="2020-05-16T05:28">05:28 / 16.05.2020</time>
+                    </li>
+                    <li class="news-grid-item">
+                        <img src="/images/stop-karantin.jpg" alt="not allowed-quarantine-image" class="grid-item-img" width="386" height="190">
+                        <a href="#" class="grid-item-link">
+                            <h3 class="news-grid-header">Итоги второго месяца карантина</h3>
+                        </a>
+                        <time class="news_grid_date" datetime="2020-05-16T05:28">05:28 / 16.05.2020</time>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <!-- NEWS GRID END -->  
     
     
-    <!-- NOTIFICATION START -->
-    <aside>
-        <div class="container">
-            <div class="notification">
-                <img class="notification-img" src="/images/bell-icon@2x.png" alt="notification-icon" width="30" height="35">
-                <h2 class="notification-title">Хотите узнать новости первыми? подключите уведомления!</h2>
-                <a class="notification-link" href="#">Включит  уведомления!</a>
+        <!-- NOTIFICATION START -->
+        <aside>
+            <div class="container">
+                <div class="notification">
+                    <img class="notification-img" src="/images/bell-icon@2x.png" alt="notification-icon" width="30" height="35">
+                    <h2 class="notification-title">Хотите узнать новости первыми? подключите уведомления!</h2>
+                    <a class="notification-link" href="#">Включит  уведомления!</a>
+                </div>
             </div>
-        </div>
-    </aside>
-    <!-- NOTIFICATION END -->
+        </aside>
+        <!-- NOTIFICATION END -->
 
-    <!-- NEWS START -->
-    <main>
-        <div class="container inside-main">
+    
+        <!-- NEWS START -->
+        <section class="container inside-main">
             <div class="last-news">
                 <h3 class="last-news-title">Последние новости</h3>
                 <ul class="last-news-list">
@@ -148,7 +153,7 @@
                             </h3>
                             <p class="last-news-text">После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе Генпрокуратуры Узбекистана.
                             </p>
-                            <p class="last-news-date">11:31 / 15.05.2020</p>
+                            <time class="last-news-date" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
                         </div>
                     </li>
                     <li class="last-news-item">
@@ -160,7 +165,7 @@
                             </h3>
                             <p class="last-news-text">Президент Узбекистана заявил, что после того, как угроза коронавируса исчезнет, в стране следовало бы принять некоторые правила периода карантина как часть своей повседневной жизни.
                             </p>
-                            <p class="last-news-date">11:31 / 15.05.2020</p>
+                            <time class="last-news-date" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
                         </div>
                     </li>
                     <li class="last-news-item">
@@ -172,7 +177,7 @@
                             </h3>
                             <p class="last-news-text">Целью этих изменений является максимально возможное сокращение количества других маршрутов на улицах, где проходят основные маршруты.
                             </p>
-                            <p class="last-news-date">11:31 / 15.05.2020</p>
+                            <time class="last-news-date" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
                         </div>
                     </li>
                     <li class="last-news-item">
@@ -184,7 +189,7 @@
                             </h3>
                             <p class="last-news-text">После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе Генпрокуратуры Узбекистана.
                             </p>
-                            <p class="last-news-date">11:31 / 15.05.2020</p>
+                            <time class="last-news-date" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
                         </div>
                     </li>
                     <li class="last-news-item">
@@ -196,7 +201,7 @@
                             </h3>
                             <p class="last-news-text">Президент Узбекистана заявил, что после того, как угроза коронавируса исчезнет, в стране следовало бы принять некоторые правила периода карантина как часть своей повседневной жизни.
                             </p>
-                            <p class="last-news-date">11:31 / 15.05.2020</p>
+                            <time class="last-news-date" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
                         </div>
                     </li>
                     <li class="last-news-item">
@@ -208,12 +213,12 @@
                             </h3>
                             <p class="last-news-text">Целью этих изменений является максимально возможное сокращение количества других маршрутов на улицах, где проходят основные маршруты.
                             </p>
-                            <p class="last-news-date">11:31 / 15.05.2020</p>
+                            <time class="last-news-date" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
                         </div>
                     </li>
                 </ul>
                 <div class="more-news">
-                    <button class="more-news-button" type="button">Больше новостей</button>
+                    <a class="more-news-link" href="#">Больше новостей</a>
                 </div> 
             </div>
             <aside class="right-side">
@@ -258,24 +263,27 @@
                     </div>
                 </div>
             </aside>
-        </div>
-    </main>
-    <!-- NEWS END -->
+        </section>
+    
+        <!-- NEWS END -->
 
-    <!-- SECOND BANNER START -->
-    <article class="second-banner">
-        <div class="container inside-s-banner">
-            <img src="/images/phone.png" alt="mobile-phone-image" class="s-banner-img">
-            <div class="banner-text-box">
-                <h2 class="s-banner-title">Всегда будьте в курсе последних новостей!</h2>
-                <p class="s-banner-text">Установите мобильное приложение NAMANGANLIKLAR24<br>
-                и все новости в вашем кармане!</p>
-            </div>           
-            <a href="#" class="google-play-link"><img class="google-play-img" src="/images/googleplay.png" alt="google-play-image" ></a>
-            <a href="#" class="app-store-link"><img class="app-store-img" src="/images/appstore.png" alt="app-store-image" ></a>
-        </div>
-    </article>
-    <!-- SECOND BANNER START -->
+        <!-- SECOND BANNER START -->
+        <article class="second-banner">
+            <div class="container inside-s-banner">
+                <img src="/images/phone.png" alt="mobile-phone-image" class="s-banner-img">
+                <div class="banner-text-box">
+                    <h2 class="s-banner-title">Всегда будьте в курсе последних новостей!</h2>
+                    <p class="s-banner-text">Установите мобильное приложение NAMANGANLIKLAR24<br>
+                    и все новости в вашем кармане!</p>
+                </div>           
+                <a class="google-play-link" href="#" target="_blank"><img class="google-play-img" src="/images/googleplay.png" alt="google-play-image" ></a>
+                <a class="app-store-link" href="#" target="_blank"><img class="app-store-img" src="/images/appstore.png" alt="app-store-image" ></a>
+            </div>
+        </article>
+        <!-- SECOND BANNER END -->
+     </main>
+     <!-- MAIN END -->
+        
 
     <!-- FOOTER START -->
     <footer>
@@ -284,11 +292,11 @@
                 <div class="link-box">
                     <p class="footer-logo-text">Namanganliklar 24</p>
                     <p class="link-box-text">Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</p>
-                    <a href="https://telegram.com" target="blank" class="footer-telegram-link"><img src="/images/telegram.png" alt="telegram-img" class="footer-telegram-icon" width="20" height="20"><span class="footer-telegram-link-text">Подписатся</span></a>
+                    <a class="footer-telegram-link" href="https://telegram.com">Подписатся</a>
                 </div>
                 <div class="footer-bottom">
                     <div class="info-box">
-                        <h4 class="info-title">О сайте</h4>
+                        <h3 class="info-title">О сайте</h3>
                         <p class="footer-info-text">Воспроизводство, копирование, тиражирование, распростране ние и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.</p>
                     </div>
                     <div class="cite-links-box">
