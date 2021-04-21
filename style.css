@@ -1,3 +1,15 @@
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 body{
     box-sizing: border-box;
     font-family: "Rubik", Arial, sans-serif;
@@ -312,23 +324,25 @@ header{
     color: #7688A4;
 }
 .last-news-date::before{
-    content: '';
+    content: "";
+    display: inline-block;
     background: url(/images/kalendar.png);
-    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 14px;
-    height: 17px;
+    height: 16px;
     margin-right: 4px;
-    color: #7688A4
 }
 .more-news{
     display: flex;
     justify-content: center;
 }
-.more-news-button{
+.more-news-link{
     border: none;
     padding: 10px 32px;
     background: #295093;
     border-radius: 5px;
+    text-decoration: none;
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
@@ -437,11 +451,21 @@ footer{
 .footer-telegram-icon{
     margin-right: 8px;
 }
-.footer-telegram-link-text{
+.footer-telegram-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #295093;
+}
+.footer-telegram-link::before{
+    content: "";
+    display: inline-block;
+    background-image: url(/images/telegram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
 }
 .footer-bottom{
     display: flex;
