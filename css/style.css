@@ -342,6 +342,8 @@ header{
     color: #434343;
 }
 .last-news-date{
+    display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -350,13 +352,11 @@ header{
 }
 .last-news-date::before{
     content: "";
-    display: inline-block;
     background: url(/images/kalendar.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 14px;
-    height: 16px;
-    margin-right: 4px;
+    width: 18px;
+    height: 20px;
+    margin-right: 1px;
 }
 .more-news{
     display: flex;
