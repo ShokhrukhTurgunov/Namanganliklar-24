@@ -106,6 +106,15 @@ header{
     align-items: center;
     flex-wrap: wrap;
 }
+.search-btn::before{
+    content: "";
+    display: block;
+    background-image: url(/images/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
 .search-btn{
     border: none;
     padding: 8px;
@@ -115,6 +124,8 @@ header{
     cursor: pointer;
 }
 .flag-btn{
+    display: flex;
+    align-items: center;
     border: none;
     margin-right: 10px;
     padding: 10px;
@@ -127,7 +138,26 @@ header{
     border-radius: 50%;
 }
 .flag-text{
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.flag-text::before{
+    content: "";
+    display: block;
+    background-image: url(/images/flag.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+.telegram-link::before{
+    content: "";
+    display: block;
+    background-image: url(/images/telegram.svg);
+    width: 20px;
+    height: 20px;
 }
 .telegram-link{
     display: flex;
@@ -176,6 +206,9 @@ header{
 .nav_link:hover{
     color: #295091;
 }
+.nrg-banner-link{
+    display: block;
+}
 .banner-img{
     width: 1200px;
     height: 100px;
@@ -209,18 +242,71 @@ header{
     color: #000000;
 }
 .covid-uz{
+    display: flex;
+    align-items: center;
+}
+.covid-uz::before{
+    content: "";
+    display: block;
+    background-image: url(/images/covid.png);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 45px;
+}
+.covid-uz-title{
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+    padding: 10px 25px;
+    font-weight: 500;
     font-size: 20px;
-    font-weight: 400;
+    line-height: 24px;
     border-right: 2px solid #EB5569;
 }
 .covid-sicks{
+    display: flex;
+    align-items: center;
+}
+.covid-sicks::before{
+    content: "";
+    display: block;
+    background-image: url(/images/face-with-medical-mask.png);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 40px;
+}
+.covid-sicks-title{
     font-size: 20px;
     color: #DB0000;
     border-right: 2px solid #F4CCD1;
 }
 .covid-healths{
+    display: flex;
+    align-items: center;
+}
+.covid-healths::before{
+    content: "";
+    display: block;
+    background-image: url(/images/smile.png);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 40px;
+}
+.covid-healths-title{
     color: #05B135;
     border-right: 2px solid #F4CCD1;
+}
+.covid-deaths{
+    display: flex;
+    align-items: center;
+}
+.covid-deaths::before{
+    content: "";
+    display: block;
+    background-image: url(/images/x.png);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 40px;
 }
 
 .news-grid-list{
@@ -259,20 +345,31 @@ header{
     display: flex;
     margin: 0 auto;
     margin-bottom: 38px;
-    height: 91px;
+    padding-left: 35px;
+    padding-right: 20px;
     background: rgba(239, 186, 84, 0.18);
     border-radius: 5px;
     align-items: center;    
 }
-.notification-img{
-    margin-left: 35px;
-}
 .notification-title{
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
     margin-left: 19px;
+    padding: 33px 0;
+}
+.notification-title::before{
+    content: "";
+    display: block;
+    background-image: url(/images/bell-icon@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 35px;
+    margin-right: 17px;
 }
 .notification-link{
     margin-left: auto;
-    margin-right: 20px;
     padding: 8px 15px;
     background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
     border-radius: 5px;
@@ -384,7 +481,6 @@ header{
     width: 386px;
 }
 .famous-news{
-    height: 542px;
     margin-bottom: 20px;
     padding: 18px;
     background: #F6F6F9;
@@ -412,14 +508,31 @@ header{
     background: rgb(246, 246, 249);
     border-radius: 5px;
     margin-bottom: 40px;
+    padding-top: 37px;
+}
+.inside-s-banner::before{
+    content: "";
+    display: block;
+    background-image: url(/images/phone.png);
+    background-repeat: no-repeat;
+    width: 232px;
+    height: 177px;
+    margin-right: 10px;
 }
 .s-banner-title{
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     color: #295093;
 }
 .s-banner-text{
+    margin: 0;
+    padding: 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
